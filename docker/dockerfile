@@ -1,0 +1,17 @@
+FROM node:8-alpine
+
+RUN apk update
+
+RUN npm install -g serverless \
+    npm install -g serverless-offline \
+    npm install -g serverless-bundle
+
+# WORKDIR /usr/src/app
+
+# COPY package*.json ./
+
+# COPY . .
+
+EXPOSE 3000
+
+CMD [ "sls", "offline", "config" ]

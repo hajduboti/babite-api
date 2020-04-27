@@ -9,6 +9,9 @@ plugins:
   - serverless-offline
   - serverless-dotenv-plugin # Load .env as environment variables
   - serverless-babel-plugin
+functions:
+  handler:
+    handler: src/handler.hello
 
 provider:
   name: aws
@@ -17,9 +20,16 @@ provider:
   region: eu-central-1
 
 
+
   custom:
-  babelPresets:
-    - latest
+    babelPresets:
+      - latest
+    webpackIncludeModules:
+      packagePath: './package.json'
+    webpack:
+      webpackConfig: 'webpack.config.js'   # Name of webpack configuration file 
+      includeModules: false   # Node modules configuration for packaging 
+      packager: 'npm'
   # bundle:
   #   sourcemaps: true          # Enable source maps
   #   caching: true             # Enable Webpack caching
