@@ -4,3 +4,5 @@ echo "HOST SRC PATH = $HOST_SRC_PATH"
 
 # docker-compose -f $HOST_SRC_PATH/docker/docker-compose.yml up -d DEV_SCHEMA=$2
 docker-compose -f $HOST_SRC_PATH/docker/docker-compose.yml up
+
+sudo sls offline

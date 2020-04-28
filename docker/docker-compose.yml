@@ -2,9 +2,9 @@ version: '2'
 services:
   web:
     restart: always
-    build:
-      context: .
-      dockerfile: dockerfile
+    # build:
+      # context: .
+      # dockerfile: dockerfile
     depends_on:
       - serverless
 
