@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/devAPI",
+            "lambdaFunction": "getChannel",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "babiteAPIDev",
+    "apiName": "babiteAPIDev",
+    "functionArns": [
+        {
+            "lambdaFunction": "getChannel"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-babiteapi-dev-113706-authRole",
+        "unAuthRoleName": "amplify-babiteapi-dev-113706-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "getChannel",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

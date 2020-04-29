@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-babiteapi-dev-113706-authRole",
+            "UnauthRoleArn": "arn:aws:iam::541080134092:role/amplify-babiteapi-dev-113706-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::541080134092:role/amplify-babiteapi-dev-113706-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-babiteapi-dev-113706-deployment",
+            "UnauthRoleName": "amplify-babiteapi-dev-113706-unauthRole",
+            "StackName": "amplify-babiteapi-dev-113706",
+            "StackId": "arn:aws:cloudformation:eu-central-1:541080134092:stack/amplify-babiteapi-dev-113706/dd4d8370-89fc-11ea-8a8b-06566fed0c82",
+            "AmplifyAppId": "dkntl0lhs75ic"
+        }
+    }
+}

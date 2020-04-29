@@ -1,0 +1,5 @@
+{
+    "tableName": "Channels",
+    "partitionKeyName": "channel_ID",
+    "partitionKeyType": "S"
+}
